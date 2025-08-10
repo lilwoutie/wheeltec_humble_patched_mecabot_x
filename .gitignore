@@ -1,0 +1,32 @@
+# ROS 2 workspace artifacts
+build/
+install/
+log/
+src/CMakeLists.txt
+
+# Ignore compiled files
+*.pyc
+__pycache__/
+*.so
+*.o
+
+# Ignore editor/IDE files
+.vscode/
+.idea/
+*.swp
+*~
+
+# Ignore system files
+.DS_Store
+
+# Ignore generated documentation
+docs/_build/
+
+# Ignore colcon artifacts
+.lcov/
+coverage/
+profile/
+
+# large files present
+src.zip
+src/wheeltec_aiui/AIUI/assets/esr/esr.jet
