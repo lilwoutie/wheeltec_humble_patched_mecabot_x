@@ -730,8 +730,9 @@ namespace lslidar_driver
 			return;
 			*/
 			//patched: + packet_byter = nullptr
-			delete[] packet_bytes;
+			/*delete[] packet_bytes;
 			packet_bytes = nullptr;
+			*/
 			return;
 		}
 
@@ -815,11 +816,11 @@ namespace lslidar_driver
 		}
 		*/
 		// Remove the problematic null-assignment
-		if (packet_bytes)  // Proper check before deletion
+		/*if (packet_bytes)  // Proper check before deletion
 		{
     			delete[] packet_bytes;    // Free memory first
     			packet_bytes = nullptr; // Then nullify (safe for future checks)
-		}
+		}*/
 		
 	}
 
@@ -892,8 +893,8 @@ namespace lslidar_driver
 			delete packet_bytes;
 			*/
 			//patched: + packet_bytes = nullptr
-			delete[] packet_bytes;
-			packet_bytes = nullptr;
+			/*delete[] packet_bytes;
+			packet_bytes = nullptr;*/
 			return;
 		}
 
@@ -989,11 +990,11 @@ namespace lslidar_driver
 		}
 		*/
 		// Remove the problematic null-assignment
-		if (packet_bytes)  // Proper check before deletion
+		/*if (packet_bytes)  // Proper check before deletion
 		{
     			delete[] packet_bytes;    // Free memory first
     			packet_bytes = nullptr; // Then nullify (safe for future checks)
-		}
+		}*/
 	}
 	
 
